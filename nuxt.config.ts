@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
+  
+  modules: ['@nuxt/eslint', '@pinia/nuxt'],
 
-  modules: ['@nuxt/eslint']
+  // pinia: {
+  //   storesDirs: ['./stores/**', './custom-folder/stores/**'],
+  // },
 })
