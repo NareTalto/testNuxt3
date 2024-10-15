@@ -6,9 +6,16 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
-  
-  modules: ['@nuxt/eslint', '@pinia/nuxt'],
 
+
+  eslint: {
+    config: {
+      // stylistic: true,
+    },
+    checker: true
+  },
+
+  modules: ['@nuxt/eslint', '@pinia/nuxt'],
   // pinia: {
   //   storesDirs: ['./stores/**', './custom-folder/stores/**'],
   // },
